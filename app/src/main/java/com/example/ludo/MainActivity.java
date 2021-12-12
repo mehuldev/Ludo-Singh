@@ -2,11 +2,13 @@ package com.example.ludo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.ludo.databinding.ActivityMainBinding;
@@ -31,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+//        LinearLayout mylayout = findViewById(R.id.myLayout);
+//        mylayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                System.out.println(v.getId());
+//            }
+//        });
 
         binding.diceR.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,5 +128,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView img = (ImageView) findViewById(id);
         img.startAnimation(aniRotate);
         img.setImageResource(im_id);
+    }
+    public void playerTap (View v){
+        ImageView img = (ImageView) v;
+        System.out.println(img.getResources().getResourceEntryName(v.getId()));
     }
 }
