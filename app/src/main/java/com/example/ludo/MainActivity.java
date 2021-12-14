@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         put(2, "diceY");
         put(3, "diceB");
     }};
-    HashMap<String, Integer> player_to_turn_map = new HashMap<String, Integer>(){{
-        put("r", 0);
-        put("g", 1);
-        put("y", 2);
-        put("b", 3);
+    HashMap<Character, Integer> player_to_turn_map = new HashMap<Character, Integer>(){{
+        put('r', 0);
+        put('g', 1);
+        put('y', 2);
+        put('b', 3);
     }};
     private int curr_player = 0;
     private final String blocks = "rgyb";
@@ -137,28 +137,21 @@ public class MainActivity extends AppCompatActivity {
         img.setImageResource(im_id);
     }
     public void playerTap (View v){
+//        System.out.println(turn_pending);
         if(!turn_pending)
             return;
         String cell_id = v.getResources().getResourceEntryName(v.getId());
-//        System.out.println("Src: "+ cell_id);
         int gotty_idx = players.get(curr_player).gotty_at_cell(cell_id);
-        System.out.println(cell_id);
+//        System.out.println("Src: "+ cell_id+" "+curr_player+" "+gotty_idx);
+        //Click on cell on which there is no gotty of particular color.
         if(gotty_idx == -1)
             return;
         gotty curr_event = players.get(curr_player).gotties.get(gotty_idx);
-        //cell_id = r15;
-        if(curr_player != player_to_turn_map.get(cell_id.charAt(0)))
-            return;
         int curr_cell = Integer.parseInt(cell_id.substring(1));
         int next_cell = curr_cell+curr_die_val;
-        //When gotty has to go to next block
-        if(next_cell > 13){
-            curr_event.block++;
-            curr_event.block %= 4;
-            next_cell -= 13;
-        }
+//        System.out.println(curr_cell+" "+next_cell);
         //When gotty have to enter the home
-        else if(curr_player == player_to_turn_map.get(cell_id.charAt(0)) && next_cell > 7){
+        if(curr_player == player_to_turn_map.get(cell_id.charAt(0)) && next_cell > 7 && curr_cell < 7){
             next_cell += 6;
             if(next_cell > 18){
                 players.get(curr_player).gotty_count--;
@@ -169,20 +162,26 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+        //When gotty has to go to next block
+        else if(next_cell > 13){
+            curr_event.block++;
+            curr_event.block %= 4;
+            next_cell -= 13;
+        }
         //When gotty remains in same block
         else{
-            //Do nothing
         }
         String dest_id = blocks.charAt(curr_event.block)
                                 +Integer.toString(next_cell);
         place_gotty_at_location(gotty_idx, dest_id);
-        curr_event.pos=dest_id;
+        curr_event.pos = dest_id;
         players.get(curr_player).gotties.set(gotty_idx,curr_event);
         curr_player = (curr_player+1)%4;
         turn_pending = false;
     }
 
     public void place_gotty_at_location(int gotty_idx, String dest_id){
+//        System.out.println(dest_id);
         String curr = players.get(curr_player).gotties.get(gotty_idx).pos;
         int id1 = this.getResources().getIdentifier(curr,"id",this.getPackageName());
         int id2 = this.getResources().getIdentifier(dest_id,"id",this.getPackageName());
@@ -202,17 +201,18 @@ public class MainActivity extends AppCompatActivity {
 
 //        System.out.println("dest: "+dest_id);
     }
-    public void onCick_start(View v){
+    public void onClick_start(View v){
         if(!turn_pending)
             return;
         String cell_id = v.getResources().getResourceEntryName(v.getId());
         int gotty_idx = players.get(curr_player).gotty_at_cell(cell_id);
+//        System.out.println(gotty_idx+" "+gotty_idx);
         if(gotty_idx == -1)
             return;
         String dest_id = blocks.charAt(curr_player)+"9";
-        players.get(curr_player).gotties.get(gotty_idx).pos = dest_id;
         turn_pending = false;
         place_gotty_at_location(gotty_idx, dest_id);
+        players.get(curr_player).gotties.get(gotty_idx).pos = dest_id;
         curr_player = (curr_player+1)%4;
     }
 

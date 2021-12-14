@@ -70,7 +70,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/red_pawn" />
 
                         <ImageView
@@ -79,7 +79,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/red_pawn" />
                     </LinearLayout>
 
@@ -99,7 +99,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/red_pawn" />
 
                         <ImageView
@@ -108,7 +108,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/red_pawn" />
                     </LinearLayout>
                 </LinearLayout>
@@ -321,7 +321,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/green_pawn" />
 
                         <ImageView
@@ -330,7 +330,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/green_pawn" />
                     </LinearLayout>
 
@@ -350,7 +350,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/green_pawn" />
 
                         <ImageView
@@ -359,7 +359,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/green_pawn" />
                     </LinearLayout>
                 </LinearLayout>
@@ -708,7 +708,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/blue_pawn" />
 
                         <ImageView
@@ -717,7 +717,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/blue_pawn" />
                     </LinearLayout>
 
@@ -737,7 +737,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/blue_pawn" />
 
                         <ImageView
@@ -746,7 +746,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/blue_pawn" />
                     </LinearLayout>
                 </LinearLayout>
@@ -958,7 +958,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/yellow_pawn" />
 
                         <ImageView
@@ -967,7 +967,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/yellow_pawn" />
                     </LinearLayout>
 
@@ -987,7 +987,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="right|top"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/yellow_pawn" />
 
                         <ImageView
@@ -996,7 +996,7 @@
                             android:layout_height="60dp"
                             android:layout_gravity="top|left"
                             android:layout_weight="1"
-                            android:onClick="onCick_start"
+                            android:onClick="onClick_start"
                             app:srcCompat="@drawable/yellow_pawn" />
                     </LinearLayout>
                 </LinearLayout>
