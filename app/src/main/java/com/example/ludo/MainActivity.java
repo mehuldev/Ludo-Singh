@@ -175,14 +175,32 @@ public class MainActivity extends AppCompatActivity {
         }
         String dest_id = blocks.charAt(curr_event.block)
                                 +Integer.toString(next_cell);
-        players.get(curr_player).gotties.set(gotty_idx,curr_event);
         place_gotty_at_location(gotty_idx, dest_id);
+        curr_event.pos=dest_id;
+        players.get(curr_player).gotties.set(gotty_idx,curr_event);
         curr_player = (curr_player+1)%4;
         turn_pending = false;
     }
 
     public void place_gotty_at_location(int gotty_idx, String dest_id){
-        System.out.println("dest: "+dest_id);
+        String curr = players.get(curr_player).gotties.get(gotty_idx).pos;
+        int id1 = this.getResources().getIdentifier(curr,"id",this.getPackageName());
+        int id2 = this.getResources().getIdentifier(dest_id,"id",this.getPackageName());
+        ImageView img1 = (ImageView) findViewById(id1);
+        ImageView img2 = (ImageView) findViewById(id2);
+        img1.setImageResource(0);
+        switch(curr_player)
+        {
+            case 0:img2.setImageResource(R.drawable.red_pawn);
+                break;
+            case 1:img2.setImageResource(R.drawable.green_pawn);
+                break;
+            case 2:img2.setImageResource(R.drawable.yellow_pawn);
+                break;
+            default:img2.setImageResource(R.drawable.blue_pawn);
+        }
+
+//        System.out.println("dest: "+dest_id);
     }
     public void onCick_start(View v){
         if(!turn_pending)
@@ -193,9 +211,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         String dest_id = blocks.charAt(curr_player)+"9";
         players.get(curr_player).gotties.get(gotty_idx).pos = dest_id;
-        curr_player = (curr_player+1)%4;
         turn_pending = false;
         place_gotty_at_location(gotty_idx, dest_id);
+        curr_player = (curr_player+1)%4;
     }
 
     public void onClick_dice(View v){

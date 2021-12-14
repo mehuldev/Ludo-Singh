@@ -1,11 +1,11 @@
 com/example/ludo/gotty.java
  com.example.ludo.gotty
-com/example/ludo/BuildConfig.java
- com.example.ludo.BuildConfig
-com/example/ludo/databinding/ActivityMainBinding.java
- com.example.ludo.databinding.ActivityMainBinding
 com/example/ludo/player.java
  com.example.ludo.player
+com/example/ludo/databinding/ActivityMainBinding.java
+ com.example.ludo.databinding.ActivityMainBinding
+com/example/ludo/BuildConfig.java
+ com.example.ludo.BuildConfig
 com/example/ludo/MainActivity.java
  com.example.ludo.MainActivity
  com.example.ludo.MainActivity$1
