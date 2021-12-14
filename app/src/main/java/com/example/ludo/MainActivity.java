@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
             generate_and_disp(turn_to_die_map.get(curr_player));
         }
         else
-            disp_toast(curr_player);
+            disp_toast((curr_player+1)%4);
     }
 
     private void StartGame(){
