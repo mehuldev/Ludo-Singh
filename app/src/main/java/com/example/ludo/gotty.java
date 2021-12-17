@@ -11,4 +11,8 @@ public class gotty{
         this.pos = pos;
         this.block = block;
     }
+    gotty(gotty other){
+        this.pos = other.pos;
+        this.block = other.block;
+    }
 }
