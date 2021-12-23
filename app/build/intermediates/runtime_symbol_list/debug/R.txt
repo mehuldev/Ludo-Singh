@@ -1815,6 +1815,8 @@ int drawable avd_hide_password 0x7f070056
 int drawable avd_show_password 0x7f070057
 int drawable blue_pawn 0x7f070058
 int drawable board 0x7f070059
+int drawable board1 0x7f0700b2
+int drawable board2 0x7f0700b3
 int drawable btn_checkbox_checked_mtrl 0x7f07005a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07005b
 int drawable btn_checkbox_unchecked_mtrl 0x7f07005c

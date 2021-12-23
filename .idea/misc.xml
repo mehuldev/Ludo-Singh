@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/naman/AndroidStudioProjects/Ludo-Singh/app/src/main/res/drawable/blue_pawn.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/naman/AndroidStudioProjects/Ludo-Singh/app/src/main/res/drawable/green_pawn.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/naman/AndroidStudioProjects/Ludo-Singh/app/src/main/res/drawable/red_pawn.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/naman/AndroidStudioProjects/Ludo-Singh/app/src/main/res/drawable/yellow_pawn.xml" value="0.21481481481481482" />
         <entry key="..\:/Users/naman/AndroidStudioProjects/Ludo-Singh/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
