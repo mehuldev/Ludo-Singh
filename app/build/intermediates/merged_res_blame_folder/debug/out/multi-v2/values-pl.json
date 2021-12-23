@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\c2e76fb5e086b5c906002f45c03cd24a\\transformed\\material-1.4.0\\res\\values-pl\\values-pl.xml",
+                    "source": "/home/mehul/.gradle/caches/transforms-3/6adff63397c1ac50e331d47bdf613af2/transformed/jetified-play-services-basement-17.1.0/res/values-pl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "4614",
+                        "endColumns": "198",
+                        "endOffsets": "4808"
+                    }
+                },
+                {
+                    "source": "/home/mehul/.gradle/caches/transforms-3/c2e76fb5e086b5c906002f45c03cd24a/transformed/material-1.4.0/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\9917c1060ba2f79f3519a1b2bf642c2c\\transformed\\jetified-play-services-base-17.1.0\\res\\values-pl\\values.xml",
+                    "source": "/home/mehul/.gradle/caches/transforms-3/9917c1060ba2f79f3519a1b2bf642c2c/transformed/jetified-play-services-base-17.1.0/res/values-pl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -40,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\be5f57a8da44af27e3b79434a1fa46b5\\transformed\\appcompat-1.4.0\\res\\values-pl\\values-pl.xml",
+                    "source": "/home/mehul/.gradle/caches/transforms-3/be5f57a8da44af27e3b79434a1fa46b5/transformed/appcompat-1.4.0/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,24 +74,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\6adff63397c1ac50e331d47bdf613af2\\transformed\\jetified-play-services-basement-17.1.0\\res\\values-pl\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "4614",
-                        "endColumns": "198",
-                        "endOffsets": "4808"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\c7220573e40aa30730232dde3fd8eccf\\transformed\\core-1.7.0\\res\\values-pl\\values-pl.xml",
+                    "source": "/home/mehul/.gradle/caches/transforms-3/c7220573e40aa30730232dde3fd8eccf/transformed/core-1.7.0/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

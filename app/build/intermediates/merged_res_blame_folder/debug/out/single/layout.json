@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_in.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sign_in.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sign_up.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_main.xml"
     }
 ]
