@@ -1,19 +1,23 @@
 [
     {
-        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable_board1.jpg.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable/board1.jpg"
     },
     {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable_green_pawn.xml.flat",
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable/green_pawn.xml"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/layout_activity_sign_in.xml.flat",
@@ -64,6 +68,10 @@
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable-v24/one.png"
     },
     {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable-v24_board2.jpg.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable-v24/board2.jpg"
+    },
+    {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable_board.jpg.flat",
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable/board.jpg"
     },
@@ -76,8 +84,16 @@
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable_board2.jpg.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable/board2.jpg"
+    },
+    {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable_four.png.flat",
         "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable/four.png"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/drawable-v24_board1.jpg.flat",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/drawable-v24/board1.jpg"
     },
     {
         "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
