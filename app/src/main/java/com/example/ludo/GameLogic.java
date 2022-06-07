@@ -36,6 +36,7 @@ public class GameLogic extends View{
     }};
     private final String blocks = "rgyb";
     private final boolean DEBUG = true;
+    private String uid;
     private ArrayList<player> players = new ArrayList<player>(0);
     Context context;
     LinearLayout root;
@@ -47,18 +48,17 @@ public class GameLogic extends View{
         this.root = root;
         gameVarModel = new GameVarModel();
     }
-
     public void disp_toast(int turn) {
         switch (turn)
         {
-            case 1:
+            case 0:
                 Toast.makeText(context,
                         "Red's turn", Toast.LENGTH_SHORT).show();
                 break;
-            case 2:Toast.makeText(context,
+            case 1:Toast.makeText(context,
                     "Green's turn", Toast.LENGTH_SHORT).show();
                 break;
-            case 3:Toast.makeText(context,
+            case 2:Toast.makeText(context,
                     "Yellow's turn", Toast.LENGTH_SHORT).show();
                 break;
             default:Toast.makeText(context,
@@ -66,12 +66,10 @@ public class GameLogic extends View{
         }
     }
     //generateAndDisp
-    public void generate_and_disp(String dice, View view) {
-        Random rand = new Random();
-        int x = rand.nextInt(6)+1;
-        gameVarModel.setCurr_die_val(x);
+    public void displayDice(String dice, View view) {
+        System.out.println("Mehul: "+dice+" "+gameVarModel.getCurr_die_val());
         int id = context.getResources().getIdentifier(dice,"id",context.getPackageName());
-        int im_id = context.getResources().getIdentifier(die_vals_to_image_map.get(x),
+        int im_id = context.getResources().getIdentifier(die_vals_to_image_map.get(gameVarModel.getCurr_die_val()),
                 "drawable",context.getPackageName());
         Animation aniRotate = AnimationUtils.loadAnimation(context,R.anim.rotate);
         ImageView img = (ImageView) view.findViewById(id);
@@ -157,12 +155,13 @@ public class GameLogic extends View{
     public void place_gotty_at_location(gotty src, gotty dest, int player_idx, View view){
         if(DEBUG)
             System.out.println("src: "+src.pos+" dest: "+dest.pos);
+        this.gameVarModel.setSrc(src.pos);
+        this.gameVarModel.setDest(dest.pos);
         int id1 = context.getResources().getIdentifier(src.pos,"id",context.getPackageName());
         int id2 = context.getResources().getIdentifier(dest.pos,"id",context.getPackageName());
-        ImageView img1 = (ImageView) view.findViewById(id1);
+        ImageView img1 = (ImageView) root.findViewById(id1);
         ImageView img2 =  (ImageView) root.findViewById(id2);
         img1.setImageResource(0);
-        System.out.println("src: "+id1+" dest: "+id2);
         switch(player_idx) {
             case 0:img2.setImageResource(R.drawable.red_pawn);
                 break;
@@ -194,25 +193,39 @@ public class GameLogic extends View{
         players.get(gameVarModel.getCurr_player()).open_gotties_count++;
     }
 
-
-
     public void onClick_dice(View v){
+        if(!gameVarModel.getUserID("player"+
+                Integer.toString((Integer)gameVarModel.getCurr_player()+1)).equals(this.getUid())){
+            disp_toast(gameVarModel.getCurr_player());
+            return;
+        }
+
+        //Multiple Click on dice by player whose turn is pending
         if(gameVarModel.isTurn_pending())
             return;
+        //The dice which is clicked
         String die_id = v.getResources().getResourceEntryName(v.getId());
+        //Person whose turn is to roll the die
         String temp = turn_to_die_map.get(gameVarModel.getCurr_player());
         if(die_id.equals(temp)){
             gameVarModel.setTurn_pending(true);
-            generate_and_disp(turn_to_die_map.get(gameVarModel.getCurr_player()),v);
+            generateDiceVal();
+            displayDice(turn_to_die_map.get(gameVarModel.getCurr_player()),v);
             if(!DEBUG && gameVarModel.getCurr_die_val()!= 6 && players.get(gameVarModel.getCurr_player()).open_gotties_count == 0){
                 gameVarModel.setCurr_player((gameVarModel.getCurr_player()+1)%4);
                 gameVarModel.setTurn_pending(false);
             }
         }
         else
-            disp_toast((gameVarModel.getCurr_player()+1)%4);
+            disp_toast(gameVarModel.getCurr_player());
     }
 
+    public void updateDice(){
+        String dice_id = "dice"+Character.toUpperCase(
+                        blocks.charAt(gameVarModel.getCurr_player()));
+        displayDice(dice_id, root.findViewById(context.getResources().getIdentifier(
+                            dice_id,"id",context.getPackageName())));
+    }
     public void StartGame(){
         gameVarModel.setCurr_player(0);
         gameVarModel.setTurn_pending(false);
@@ -223,5 +236,23 @@ public class GameLogic extends View{
             }
         }
     }
+    public player getPlayer(int i){
+        return this.players.get(i);
+    }
+    private void generateDiceVal(){
+        Random rand = new Random();
+        int x = rand.nextInt(6)+1;
+        gameVarModel.setCurr_die_val(x);
+    }
 
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+    public boolean isDEBUG(){
+        return this.DEBUG;
+    }
 }

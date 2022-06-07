@@ -1,14 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_in.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sign_in.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sign_up.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\naman\\AndroidStudioProjects\\Ludo-Singh\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_authenticate.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_authenticate.xml"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/mehul/Desktop/Ludo-Singh/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_authenticate.xml",
+        "source": "/home/mehul/Desktop/Ludo-Singh/app/src/main/res/layout/content_authenticate.xml"
     }
 ]

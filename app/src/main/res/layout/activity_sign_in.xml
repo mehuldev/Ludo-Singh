@@ -20,40 +20,39 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/text_SignIn_userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@color/white"
             android:ems="10"
-            android:hint="E-Mail"
-            android:inputType="textEmailAddress"
+            android:hint="Username"
+            android:inputType="text"
             android:minHeight="48dp"
             android:padding="9dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/text_SignIn_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
             android:background="@color/white"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword"
+            android:inputType="text|textPassword"
             android:minHeight="48dp"
             android:padding="9dp" />
 
-        <TextView
-            android:id="@+id/tvClickSignUp"
+        <Button
+            android:id="@+id/button_SignIn_SignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:padding="5dp"
-            android:text="Click For SignUp" />
+            android:text="Do no have a Account? SignUp" />
 
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/button_SignIn_SignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
